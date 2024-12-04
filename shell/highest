@@ -1,0 +1,11 @@
+#	highest filename [howmany]
+#	print the max number in the file
+#
+#
+#
+#
+
+filename=${1:?"filename missing."}
+howmany=${2:-10}
+
+sort -nr $filename | head -$howmany
